@@ -38,6 +38,7 @@ class AccountController extends BaseController {
     public function logout() {
         if (session('user_id')) {
             D('Common/User')->logout();
+            session('token',null);
             $this->success('注销帐号...', U('Index/index'));
             exit();
         } else {
