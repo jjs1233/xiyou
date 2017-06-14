@@ -75,8 +75,10 @@ class IndexController extends Controller {
         }else{
             session('class',$_GET['class']);
         }
-        $model = M('friend')->alias('s')->join('__USER__ f on s.friend_id = f.user_id')->where(array('f.class' => session('class')));
+        $model = M('friend')->alias('s')->join('__USER__ f on s.friend_id = f.user_id')->where(array('f.class' => session('class'),'f.master_id' => session('user_id')));
+
     	$datas = $model->field('user_name,mobile,real_name,class,grade')->select();
+        
         $l = 10;
         $cou = $model->count();
 
