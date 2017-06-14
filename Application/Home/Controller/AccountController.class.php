@@ -54,6 +54,7 @@ class AccountController extends BaseController {
             if (!$user) {
                 $this->error(UserApi::$error);
             }
+            session('token',self::token);
             $this->success('注册成功,页面跳转中...', U('Index/admin'));
             exit();
         }
