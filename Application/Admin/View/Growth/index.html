@@ -1,0 +1,47 @@
+<include file="Public/header" title="成长列表" />
+
+<div id="page-wrapper">
+    
+    <div class="row">
+        <div class="col-md-6">
+            <a href="{:U('growth/add')}" class="btn btn-success">添加成长</a>
+        </div>
+        <div class="col-md-6">
+            <form action="{:U('growth/index')}" method="post">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" name="key" placeholder="输入金钱或灵气关键词搜索">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+            <th>编号</th>
+                <th>金钱</th>
+                <th>灵气</th>
+                <th>日期</th>
+                <th>账号</th>
+            </tr>
+        </thead>
+        <tbody>
+        <foreach name="model" item="v">
+            <tr>
+            <td>{$v.id}</td>
+                <td>{$v.money}</td>
+                <td>{$v.soul}</td>
+                <td>{$v.date}</td>
+                <td>{$v['user']['mobile']}</td>
+                <td><a href="{:U('growth/update',array('id'=>$v['id']))}">编辑</a> | <a href="{:U('growth/delete',array('id'=>$v['id']))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除</a></td>
+            </tr>
+        </foreach>
+        </tbody>
+    </table>
+    {$page}
+</div>
+
+
+<include file="Public/footer" />

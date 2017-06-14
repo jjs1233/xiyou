@@ -1,0 +1,16 @@
+<include file="Public/header" title="添加朋友" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('friend/add')}">
+        <div class="form-group">
+            <label for="aa">主人账号</label>
+            <input type="text" name="master" class="form-control" id="aa" placeholder="输入主人账号">
+        </div>
+        <div class="form-group">
+            <label for="aa">朋友账号名</label>
+            <input type="text" name="friend" class="form-control" id="aa" placeholder="输入朋友账号">
+        </div>
+
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+</div>
+<include file="Public/footer" />

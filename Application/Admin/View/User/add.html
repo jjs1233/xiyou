@@ -1,0 +1,51 @@
+<include file="Public/header" title="添加分类" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('user/add')}">
+        <div class="form-group">
+            <label for="aa">账号</label>
+            <input type="text" name="mobile" class="form-control" id="aa" placeholder="输入账号">
+        </div>
+        <div class="form-group">
+            <label for="aa">请输入密码</label>
+            <input type="text" name="password" class="form-control" id="aa" placeholder="输入新密码">
+        </div>
+        <div class="form-group">
+            <label for="aa">确认密码</label>
+            <input type="text" name="re_password" class="form-control" id="aa" placeholder="确认密码">
+        </div>
+        <div class="form-group">
+            <label for="aa">用户名</label>
+            <input type="text" name="user_name" class="form-control" id="aa" placeholder="输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="aa">真实姓名</label>
+            <input type="text" name="real_name" class="form-control" id="aa" placeholder="输入真实姓名">
+        </div>
+
+        <div class="form-group">
+            <label for="aa">性别</label>
+            <select name="sex" id="bb" class="form-control">
+                <option value="0">未知</option>
+                <option value="1">男</option>
+                <option value="2">女</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="bb">会员类别</label>
+            <select name="class" id="bb" class="form-control">
+                <option value="一级会员">一级会员</option>
+                <option value="二级会员">二级会员</option>
+                <option value="三级会员">三级会员</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cc">等级</label>
+            <input type="text" name="grade" class="form-control" id="cc" placeholder="输入等级 默认0">
+        </div>
+
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+</div>
+<include file="Public/footer" />

@@ -1,0 +1,18 @@
+<include file="Public/header" title="编辑朋友" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('friend/update')}">
+        <div class="form-group">
+            <label for="aa">主人账号</label>
+            <input type="text" name="master" class="form-control" id="aa" placeholder="输入主人账号" value= "{$model['master']['mobile']}">
+        </div>
+        <div class="form-group">
+            <label for="aa">朋友账号</label>
+            <input type="text" name="friend" class="form-control" id="aa" value= "{$model['friend']['mobile']}" placeholder="输入朋友账号">
+        </div>
+
+        <input type="hidden" name="id" value="{$model['id']}">
+
+        <button type="submit" class="btn btn-default">修改</button>
+    </form>
+</div>
+<include file="Public/footer" />

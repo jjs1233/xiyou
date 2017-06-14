@@ -1,0 +1,18 @@
+[ 2017-06-13T17:01:14+08:00 ] ::1 /xiyou/index.php/account/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Account
+
+[ 2017-06-13T17:01:21+08:00 ] ::1 /xiyou/index.php/account/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Account
+
+[ 2017-06-13T17:01:24+08:00 ] ::1 /xiyou/index.php/Account/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Account
+

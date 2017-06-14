@@ -1,0 +1,2840 @@
+[ 2017-06-11T17:17:26+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.109375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.046875s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.046875s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.312500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.062500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.046875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046875s ]
+
+[ 2017-06-11T17:17:30+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0938s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0469s ]
+SQL: SELECT * FROM `ghs_session` WHERE ( MD5(user_id)='c20ad4d76fe97759aa27a0c99bff6710' ) LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '12' LIMIT 1   [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497170849 ) [ RunTime:0.0156s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('12','马大哈','cd95c575d14557efbeb5af91df113504','9bf37f755a2a6dc0444330e67cb7abaa','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497172649','127.0.0.1') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497172649' WHERE ( user_id=12 ) [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:17:30+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:17:33+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:18:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:18:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:18:34+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='18800015555' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497172413 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='18800015555' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='18800015555' OR mobile='18800015555' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('18800015555','1','1497172713','127.0.0.1','248397','1497173913') [ RunTime:0.0156s ]
+
+[ 2017-06-11T17:20:01+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '18800015555' AND `code` = '248397' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = '李超人' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='18800015555' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','李超人','李嘉诚','7e7fe2c0e9f3b67636f14c67ad4c2210','18800015555','kVWHlp','1','1497172801','127.0.0.1','1497172801','127.0.0.1','') [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '20' [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497171001 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497172801','127.0.0.1') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497172801' WHERE ( user_id=13 ) [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:20:03+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:20:07+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:20:34+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497172834',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497171034 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497172834','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497172834' WHERE ( user_id=13 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:20:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:27:47+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( user_id=13 ) [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:27:49+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:27:57+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:15+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18686440000' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:19+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:25+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18686440000' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:28+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:43+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18000000000' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497173323',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '2' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '2' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497171523 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('2','18000000000','cd95c575d14557efbeb5af91df113504','41978d3b7f973000a46d7c2488416a00','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497173323','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497173323' WHERE ( user_id=2 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:28:44+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:30:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:30:47+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:30:47+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:34:55+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:35:24+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18686440000' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:35:27+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:35:52+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497173752',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497171952 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497173752','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497173752' WHERE ( user_id=13 ) [ RunTime:0.0469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:35:54+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:35:55+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( user_id=13 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:35:56+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:06+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:18+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497173777',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497171977 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497173777','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497173777' WHERE ( user_id=13 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:19+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:21+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:36:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:03+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( user_id=13 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:04+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:10+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:36+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18684668765' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:46+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18684668765' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:37:50+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:38:13+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18776668888' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497173892',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '12' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '12' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497172092 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('12','马大哈','cd95c575d14557efbeb5af91df113504','9bf37f755a2a6dc0444330e67cb7abaa','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497173892','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497173892' WHERE ( user_id=12 ) [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:38:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:41:44+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:41:44+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:42:24+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html?0.07632565125823021
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:42:30+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='18900015555' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497173850 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='18900015555' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='18900015555' OR mobile='18900015555' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('18900015555','1','1497174150','127.0.0.1','311578','1497175350') [ RunTime:0.0156s ]
+
+[ 2017-06-11T17:43:20+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '18900015555' AND `code` = '311578' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = '刘海' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='18900015555' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','刘海','齐刘海','2fe0e1075f388ea97967c94445eb28b6','18900015555','StktLg','1','1497174199','127.0.0.1','1497174199','127.0.0.1','') [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '21' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '14' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497172399 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('14','刘海','cd95c575d14557efbeb5af91df113504','9aa619c3c738524399eef7011cafa8c5','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497174199','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497174199' WHERE ( user_id=14 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:43:21+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T17:47:25+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T17:47:29+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T17:47:33+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:47:36+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:47:40+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html?0.17926765233278275
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T17:47:49+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='18900015555' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497174169 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='18900015555' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='18900015555' OR mobile='18900015555' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-11T17:48:05+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:10+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( user_id=14 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:11+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:28+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18900015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:32+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:36+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18900015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497174516',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '14' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '14' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497172716 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('14','刘海','cd95c575d14557efbeb5af91df113504','9aa619c3c738524399eef7011cafa8c5','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497174516','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497174516' WHERE ( user_id=14 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:48:37+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T17:49:46+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T17:49:49+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:49:56+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18900015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497174596',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '14' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '14' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497172796 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('14','刘海','cd95c575d14557efbeb5af91df113504','9aa619c3c738524399eef7011cafa8c5','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497174596','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497174596' WHERE ( user_id=14 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:49:57+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T17:53:52+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T18:28:15+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:29:04+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:29:07+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:29:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497176953',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497175153 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497176953','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497176953' WHERE ( user_id=13 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:29:15+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:30:07+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:32:40+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:33:06+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:33:10+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:35:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:36:17+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:36:33+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18900015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497177393',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '14' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0313s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '14' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497175593 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('14','刘海','cd95c575d14557efbeb5af91df113504','9aa619c3c738524399eef7011cafa8c5','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497177393','127.0.0.1') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497177393' WHERE ( user_id=14 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:36:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:37:23+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:37:26+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:37:27+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:50:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.3281s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0625s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='17744445555' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.1563s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497177911 ) LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='17744445555' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='17744445555' OR mobile='17744445555' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('17744445555','1','1497178211','127.0.0.1','944490','1497179411') [ RunTime:0.0781s ]
+
+[ 2017-06-11T18:51:36+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '17744445555' AND `code` = '944490' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = '猪八戒' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046875s ]
+
+[ 2017-06-11T18:51:42+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2017-06-11T18:52:16+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.2031s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '17744445555' AND `code` = '944490' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = 'jack' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='17744445555' ) LIMIT 1   [ RunTime:0.0625s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','jack','jackie','e4610aa4dd6e903ee400dcdcf7723e76','17744445555','IACq5J','1','1497178334','127.0.0.1','1497178334','127.0.0.1','') [ RunTime:0.0938s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.2656s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '22' [ RunTime:0.1719s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '15' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497176534 ) [ RunTime:0.1094s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('15','jack','cd95c575d14557efbeb5af91df113504','94652279e995f0c7f855f4cfca625464','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497178334','127.0.0.1') [ RunTime:0.0625s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497178334' WHERE ( user_id=15 ) [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:52:18+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T18:53:38+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T18:53:42+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T18:55:10+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T18:55:13+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T18:55:16+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html?0.10386751824989915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:56:19+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='17744445556' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497178278 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='17744445556' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='17744445556' OR mobile='17744445556' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('17744445556','1','1497178578','127.0.0.1','732772','1497179778') [ RunTime:0.0313s ]
+
+[ 2017-06-11T18:56:56+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '17744445556' AND `code` = '732772' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = 'matt' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='17744445556' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','matt','marke','1e537b6d69688b1636185fca37919455','17744445556','ugPPvk','1','1497178616','127.0.0.1','1497178616','127.0.0.1','') [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '23' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '16' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497176816 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('16','matt','cd95c575d14557efbeb5af91df113504','912c83ae8cf883481c25bd09c2e2f67c','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497178616','127.0.0.1') [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497178616' WHERE ( user_id=16 ) [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:56:57+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:57:32+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:57:33+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T18:57:56+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html?0.06239417637698352
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:58:14+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='13600015555' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497178393 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='13600015555' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='13600015555' OR mobile='13600015555' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('13600015555','1','1497178693','127.0.0.1','176122','1497179893') [ RunTime:0.0156s ]
+
+[ 2017-06-11T18:58:55+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '13600015555' AND `code` = '176122' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = 'victor' LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='13600015555' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','victor','victory','d3ded0eedd97b8347f5533dfcdee34aa','13600015555','E01Enb','1','1497178735','127.0.0.1','1497178735','127.0.0.1','') [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '24' [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '17' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497176935 ) [ RunTime:0.0000s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('17','victor','cd95c575d14557efbeb5af91df113504','cb26052e11722bf3e2f93e25224620ec','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497178735','127.0.0.1') [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497178735' WHERE ( user_id=17 ) [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T18:58:57+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-06-11T19:01:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:01:55+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html?0.4283550875261426
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:02:00+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_smscode` WHERE ( mobile='13600015558' ) ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND created>1497178620 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( mobile='13600015558' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ghs_smscode` WHERE ( ip='127.0.0.1' AND TO_DAYS(FROM_UNIXTIME(created))=TO_DAYS(now()) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( user_name='13600015558' OR mobile='13600015558' ) ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_smscode` (`mobile`,`idtype`,`created`,`ip`,`code`,`expire`) VALUES ('13600015558','1','1497178920','127.0.0.1','408023','1497180120') [ RunTime:0.0313s ]
+
+[ 2017-06-11T19:02:56+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ghs_smscode` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 4 for Common\Model\SmscodeModel::check_smscode(), called in D:\WWW\xiyou\Application\Common\Api\UserApi.class.php on line 94 and defined D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 219 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: sid D:\WWW\xiyou\Application\Common\Model\SmscodeModel.class.php 第 230 行.
+SQL: SELECT * FROM `ghs_smscode` WHERE `mobile` = '13600015558' AND `code` = '408023' AND `idtype` = 1 ORDER BY sid DESC LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ghs_user` WHERE `user_name` = 'mick' LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT * FROM `ghs_user` WHERE ( mobile='13600015558' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\WWW\xiyou\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ghs_user` (`u_type`,`user_name`,`real_name`,`password`,`mobile`,`salt`,`status`,`last_login`,`last_login_ip`,`registered`,`reg_ip`,`inviter_mobile`) VALUES ('1','mick','mike','aad9898422d26ba8d9e86b7dd7b35752','13600015558','fnzFl2','1','1497178976','127.0.0.1','1497178976','127.0.0.1','') [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `fans_num`=fans_num+1 WHERE `mobile` = '' [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_smscode` SET `status`='1' WHERE `sid` = '25' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: autologin D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '18' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0000s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497177176 ) [ RunTime:0.0313s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('18','mick','cd95c575d14557efbeb5af91df113504','d7a3f80fdde1d3522f7077c25be46960','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497178976','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497178976' WHERE ( user_id=18 ) [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:02:57+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:30:49+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:30:55+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:30:58+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:31:12+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T19:31:15+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:31:21+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497180680',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_session` [ RunTime:0.0156s ]
+SQL: DELETE FROM `ghs_session` WHERE ( last_action<1497178880 ) [ RunTime:0.0156s ]
+SQL: REPLACE INTO `ghs_session` (`user_id`,`user_name`,`session_id`,`auth_sign`,`agent`,`last_action`,`last_ip`) VALUES ('13','李超人','cd95c575d14557efbeb5af91df113504','fbf2a3f3dcf4c1a2806e7844b4d29184','s:102:\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\";','1497180680','127.0.0.1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: UPDATE `ghs_user` SET `last_action`='1497180680' WHERE ( user_id=13 ) [ RunTime:0.0313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:31:22+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:31:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/index/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:41:20+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:41:22+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T19:41:44+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T22:32:12+08:00 ] 127.0.0.1 /xiyou/index.php?m=&c=Account&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+ERR: 1146:Table 'tpadmin2.user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `user`
+ERR: 1146:Table 'tpadmin2.user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `user`
+
+[ 2017-06-11T22:33:02+08:00 ] 127.0.0.1 /xiyou/index.php?m=&c=Account&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+ERR: 1146:Table 'tpadmin2.user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `user`
+ERR: 1146:Table 'tpadmin2.user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `user`
+
+[ 2017-06-11T22:33:38+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T22:33:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T22:34:31+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T22:34:38+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T22:34:40+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T22:35:21+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T22:41:21+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T22:45:02+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:40:59+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.093750s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.093750s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:41:01+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:41:50+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:41:51+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:42:17+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:43:20+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:43:25+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:43:27+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T23:43:39+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0781s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0469s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497195819',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-11T23:44:20+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T23:44:23+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-06-11T23:44:33+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497195873',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-11T23:45:24+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: capacha D:\WWW\xiyou\Application\Common\Api\UserApi.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ghs_user` WHERE `mobile` = '18800015555' ORDER BY user_id DESC LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ghs_user` SET `last_login`='1497195924',`last_login_ip`='127.0.0.1',`logins`=`logins`+1 WHERE `user_id` = '13' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ghs_user` [ RunTime:0.0156s ]
+SQL: SELECT `user_id`,`u_type`,`mobile`,`user_name`,`real_name`,`password`,`fans_num`,`sex`,`role_id`,`balance`,`exp_lower`,`salt`,`status`,`avatar`,`last_login`,`last_action`,`last_login_ip`,`logins`,`registered`,`reg_ip`,`protected`,`inviter_mobile`,`source` FROM `ghs_user` WHERE `user_id` = '13' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-11T23:45:26+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:45:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:45:35+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:46:41+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:46:41+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:47:03+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/smscode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:50:41+08:00 ] 127.0.0.1 /xiyou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:50:43+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-11T23:50:43+08:00 ] 127.0.0.1 /xiyou/index.php/Home/Account/capacha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

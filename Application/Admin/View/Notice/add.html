@@ -1,0 +1,12 @@
+<include file="Public/header" title="添加公告" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('notice/add')}">
+        <div class="form-group">
+            <label for="aa">公告</label>
+            <textarea name="intro"   rows="10" class="form-control" id="aa" placeholder="输入公告" ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+</div>
+<include file="Public/footer" />
