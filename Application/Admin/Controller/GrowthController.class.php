@@ -58,6 +58,10 @@ class GrowthController extends BaseController
         }
         if (IS_POST) {
             $user = M('user')->where(array('username' => $_POST['username']))->find();
+            if($user == NULL){
+                $this->error('该账号不存在');
+                exit();
+            }
             $_POST['user_id'] = $user['user_id'];
             $model = D("growth");
             if (!$model->create()) {
